@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+.trendingCard {
+  width: rem(470);
+  display: inline-block;
+  height: 100%;
+  border-radius: rem(8);
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../../public/assets/thumbnails/beyond-earth/regular/large.jpg");
+  position: relative;
+
+  &__textBox {
+    padding: rem(24);
+    position: absolute;
+    bottom: 0;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+  &__details {
+    display: flex;
+    gap: rem(8);
+    align-items: center;
+    :not(.heading--m) {
+      opacity: 0.75;
+    }
+  }
+}

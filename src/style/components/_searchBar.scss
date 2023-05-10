@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+.searchBar {
+  padding: rem(32);
+  display: flex;
+  &__icon {
+    margin-right: rem(28);
+    fill: var(--clr-light-1);
+    cursor: pointer;
+  }
+  &__textInput {
+    border: none;
+    outline: none;
+    background-color: var(--clr-dark-2);
+    caret-color: var(--clr-primary-1);
+    flex: 1;
+    color: var(--clr-light-1);
+  }
+}

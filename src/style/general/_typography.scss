@@ -1,0 +1,53 @@
+@use "../abstracts/" as *;
+// [class^="heading--"],
+// [class*=" heading--"] {
+// }
+
+.heading {
+  &--l {
+    font-size: rem(32);
+    line-height: rem(40);
+    letter-spacing: rem(-0.5);
+    font-weight: 300;
+  }
+  &--m {
+    font-size: rem(24);
+    line-height: rem(30);
+    letter-spacing: rem(1);
+    font-weight: 300;
+  }
+  &--s {
+    font-size: rem(24);
+    line-height: rem(30);
+    letter-spacing: rem(1);
+    font-weight: 500;
+  }
+  &--xs {
+    font-size: rem(18);
+    line-height: rem(23);
+    letter-spacing: rem(1);
+    font-weight: 500;
+  }
+}
+
+[calss^="body--"],
+[calss*=" body--"] {
+  letter-spacing: rem(1);
+  font-weight: 300;
+}
+
+.body {
+  &--m {
+    font-size: rem(15);
+    line-height: rem(19);
+    font-weight: 300;
+    letter-spacing: rem(1);
+  }
+  &--s {
+    font-size: rem(13);
+    line-height: rem(16);
+    opacity: 0.75;
+    font-weight: 300;
+    letter-spacing: rem(1);
+  }
+}

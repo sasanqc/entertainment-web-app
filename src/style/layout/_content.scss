@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+.content {
+  padding-left: rem(32);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

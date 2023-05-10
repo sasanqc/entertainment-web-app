@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+.trending {
+  height: rem(230);
+  margin-bottom: rem(40);
+  &__list {
+    display: flex;
+    height: 100%;
+    gap: rem(40);
+    cursor: grab;
+    overflow: hidden;
+    padding-right: rem(32);
+  }
+  &__item {
+    height: 100%;
+  }
+}

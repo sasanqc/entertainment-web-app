@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+.mediaCard {
+  width: rem(280);
+  position: relative;
+  &__image {
+    width: 100%;
+    margin-bottom: rem(8);
+    border-radius: rem(8);
+  }
+  &__textBox {
+    bottom: 0;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__bookmark {
+    position: absolute;
+    top: rem(16);
+    right: rem(16);
+    background: #10141e;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    padding: rem(8);
+    border-radius: 50%;
+  }
+  &__details {
+    display: flex;
+    gap: rem(8);
+    align-items: center;
+    :not(.heading--xs) {
+      opacity: 0.75;
+    }
+  }
+}

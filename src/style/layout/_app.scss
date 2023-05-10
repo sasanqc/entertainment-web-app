@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  padding-top: rem(32);
+  padding-left: rem(32);
+  .sideBar {
+    grid-row: 1/-1;
+  }
+  .searchBar {
+    grid-column: 2/-1;
+  }
+
+  .content {
+    grid-column: 2/-1;
+    overflow: auto;
+  }
+}
