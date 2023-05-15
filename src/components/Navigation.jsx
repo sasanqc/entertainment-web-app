@@ -5,10 +5,10 @@ import { ReactComponent as HomeIcon } from "../assets/icons/icon-nav-home.svg";
 import { ReactComponent as TvIcon } from "../assets/icons/icon-nav-tv-series.svg";
 import { ReactComponent as MoviesIcon } from "../assets/icons/icon-nav-movies.svg";
 const navItems = [
-  { path: "home", icon: <HomeIcon className="nav__icon" /> },
-  { path: "movies", icon: <MoviesIcon className="nav__icon" /> },
-  { path: "series", icon: <TvIcon className="nav__icon" /> },
-  { path: "bookmarks", icon: <BookmarkIcon className="nav__icon" /> },
+  { path: "/home", icon: <HomeIcon className="nav__icon" /> },
+  { path: "/movies", icon: <MoviesIcon className="nav__icon" /> },
+  { path: "/series", icon: <TvIcon className="nav__icon" /> },
+  { path: "/bookmarks", icon: <BookmarkIcon className="nav__icon" /> },
 ];
 
 const Navigation = () => {

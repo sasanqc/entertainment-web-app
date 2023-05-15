@@ -4,6 +4,7 @@ import { ReactComponent as MoviesIcon } from "../assets/icons/icon-nav-movies.sv
 import { ReactComponent as TvSeriesIcon } from "../assets/icons/icon-category-tv.svg";
 import { ReactComponent as BookMarkIcon } from "../assets/icons/icon-bookmark-empty.svg";
 import { ReactComponent as BookMarkFullIcon } from "../assets/icons/icon-bookmark-full.svg";
+
 import { useStore } from "../store";
 const TrendingCard = ({ item }) => {
   const dispatch = useStore(false)[1];
