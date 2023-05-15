@@ -7,16 +7,18 @@
     gap: rem(40);
   }
   &__link {
-    transition: all 1s linear;
+    fill: var(--clr-light-2);
+    color: var(--clr-light-2);
+    transition: color 0.2s ease;
     :hover {
-      fill: var(--clr-primary-1);
+      color: var(--clr-primary-1);
+    }
+    &--active {
+      color: var(--clr-light-1);
     }
   }
   &__icon {
-    fill: var(--clr-light-2);
-    &--active {
-      fill: var(--clr-light-1);
-    }
+    fill: currentColor;
     @include size(rem(20));
   }
 }

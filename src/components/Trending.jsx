@@ -1,8 +1,9 @@
 import React, { Fragment, useEffect, useRef } from "react";
-import { ReactComponent as OIcon } from "../assets/icons/icon-oval.svg";
-import { ReactComponent as MoviesIcon } from "../assets/icons/icon-nav-movies.svg";
-const Trending = () => {
+import TrendingCard from "./TrendingCard";
+
+const Trending = ({ items }) => {
   const trendingList = useRef();
+  console.log("trending: ", items);
   useEffect(() => {
     trendingList.current.addEventListener("mousedown", mouseDownHandler);
     return () => {};
@@ -42,81 +43,11 @@ const Trending = () => {
       <h1 className="u-mb-m heading--l">Trending</h1>
       <div className="trending">
         <ul className="trending__list" ref={trendingList}>
-          <li className="trending__item">
-            <article className="trendingCard">
-              <div className="trendingCard__textBox">
-                <div className="trendingCard__details">
-                  <p className="body--m">2019</p>
-                  <OIcon />
-                  <MoviesIcon />
-                  <p className="body--m">Movie</p>
-                  <OIcon />
-                  <p className="body--m">PG</p>
-                </div>
-                <h3 className="heading--s">Beyond Earth1</h3>
-              </div>
-            </article>
-          </li>
-          <li className="trending__item">
-            <article className="trendingCard">
-              <div className="trendingCard__textBox">
-                <div className="trendingCard__details">
-                  <p className="body--m">2019</p>
-                  <OIcon />
-                  <MoviesIcon />
-                  <p className="body--m">Movie</p>
-                  <OIcon />
-                  <p className="body--m">PG</p>
-                </div>
-                <h3 className="heading--s">Beyond Earth2</h3>
-              </div>
-            </article>
-          </li>
-          <li className="trending__item">
-            <article className="trendingCard">
-              <div className="trendingCard__textBox">
-                <div className="trendingCard__details">
-                  <p className="body--m">2019</p>
-                  <OIcon />
-                  <MoviesIcon />
-                  <p className="body--m">Movie</p>
-                  <OIcon />
-                  <p className="body--m">PG</p>
-                </div>
-                <h3 className="heading--s">Beyond Earth3</h3>
-              </div>
-            </article>
-          </li>
-          <li className="trending__item">
-            <article className="trendingCard">
-              <div className="trendingCard__textBox">
-                <div className="trendingCard__details">
-                  <p className="body--m">2019</p>
-                  <OIcon />
-                  <MoviesIcon />
-                  <p className="body--m">Movie</p>
-                  <OIcon />
-                  <p className="body--m">PG</p>
-                </div>
-                <h3 className="heading--s">Beyond Earth4</h3>
-              </div>
-            </article>
-          </li>
-          <li className="trending__item">
-            <article className="trendingCard">
-              <div className="trendingCard__textBox">
-                <div className="trendingCard__details">
-                  <p className="body--m">2019</p>
-                  <OIcon />
-                  <MoviesIcon />
-                  <p className="body--m">Movie</p>
-                  <OIcon />
-                  <p className="body--m">PG</p>
-                </div>
-                <h3 className="heading--s">Beyond Earth5</h3>
-              </div>
-            </article>
-          </li>
+          {items.map((el, index) => (
+            <li className="trending__item" key={index}>
+              <TrendingCard item={el} />
+            </li>
+          ))}
         </ul>
       </div>
     </Fragment>

@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 .searchBar {
   padding: rem(32);
+  padding-left: 0;
   display: flex;
   &__icon {
     margin-right: rem(28);

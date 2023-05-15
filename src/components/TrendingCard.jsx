@@ -5,36 +5,32 @@ import { ReactComponent as TvSeriesIcon } from "../assets/icons/icon-category-tv
 import { ReactComponent as BookMarkIcon } from "../assets/icons/icon-bookmark-empty.svg";
 import { ReactComponent as BookMarkFullIcon } from "../assets/icons/icon-bookmark-full.svg";
 import { useStore } from "../store";
-const MediaCard = ({ item }) => {
+const TrendingCard = ({ item }) => {
   const dispatch = useStore(false)[1];
   const handleToggleBookmark = () => {
     dispatch("TOGGLE_BOOKMARK", item.title);
   };
-
   return (
-    <article className="mediaCard">
-      <img
-        src={item.thumbnail.regular.medium}
-        alt=""
-        className="mediaCard__image"
-      />
+    <article
+      className="trendingCard"
+      style={{ backgroundImage: `url(${item.thumbnail.trending.large})` }}
+    >
       <button className="mediaCard__bookmark" onClick={handleToggleBookmark}>
         {item.isBookmarked ? <BookMarkFullIcon /> : <BookMarkIcon />}
       </button>
-
-      <div className="mediaCard__textBox">
-        <div className="mediaCard__details">
-          <p className="body--s">{item.year}</p>
+      <div className="trendingCard__textBox">
+        <div className="trendingCard__details">
+          <p className="body--m">{item?.year}</p>
           <OIcon />
           {item.category === "Movie" ? <MoviesIcon /> : <TvSeriesIcon />}
-          <p className="body--s">{item.category}</p>
+          <p className="body--m">{item?.category}</p>
           <OIcon />
-          <p className="body--s">{item.rating}</p>
+          <p className="body--m">{item?.rating}</p>
         </div>
-        <h3 className="heading--xs">{item.title}</h3>
+        <h3 className="heading--s">{item?.title}</h3>
       </div>
     </article>
   );
 };
 
-export default React.memo(MediaCard);
+export default React.memo(TrendingCard);
