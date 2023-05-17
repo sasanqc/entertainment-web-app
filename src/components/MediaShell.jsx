@@ -4,9 +4,11 @@ import MediaContainer from "../layout/MediaContainer";
 const MediaShell = ({ children, media, placeholder }) => {
   const [searchText, setSearchText] = useState("");
   let searchResult = [];
+
   const handleSearch = (text) => {
     setSearchText(text);
   };
+
   if (searchText) {
     searchResult = media.filter((el) =>
       el.title.toLowerCase().includes(searchText)

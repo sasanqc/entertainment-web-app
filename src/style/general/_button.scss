@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.btn {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: rem(15);
+  line-height: rem(19);
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: rem(16);
+  display: block;
+  transition: all 0.2s ease;
+  &--primary {
+    background-color: var(--clr-primary-1);
+    color: white;
+  }
+  &:hover {
+    background-color: white;
+    color: var(--clr-dark-1);
+  }
+}
