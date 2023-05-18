@@ -3,7 +3,6 @@ import TrendingCard from "./TrendingCard";
 
 const Trending = ({ items }) => {
   const trendingList = useRef();
-  console.log("trending: ", items);
   useEffect(() => {
     trendingList.current.addEventListener("mousedown", mouseDownHandler);
     return () => {};
@@ -24,11 +23,7 @@ const Trending = ({ items }) => {
     document.addEventListener("mouseup", mouseUpHandler);
   };
   const mouseMoveHandler = function (e) {
-    // How far the mouse has been moved
     const dx = e.clientX - pos.x;
-
-    // Scroll the element
-
     trendingList.current.scrollLeft = pos.left - dx;
   };
   const mouseUpHandler = function () {

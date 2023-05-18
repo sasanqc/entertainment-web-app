@@ -3,7 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: max-content 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 100% 1fr;
   overflow: hidden;
   padding-top: rem(32);
   padding-left: rem(32);
@@ -15,7 +15,6 @@
   }
 
   .content {
-    grid-column: 2/-1;
     overflow: auto;
   }
   @include respond(tab-port) {
