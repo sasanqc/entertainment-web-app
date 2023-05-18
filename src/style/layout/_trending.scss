@@ -13,4 +13,12 @@
   &__item {
     height: 100%;
   }
+  @include respond(phone) {
+    height: rem(140, $fs-s);
+    &__list {
+      gap: rem(16, $fs-s);
+      cursor: grab;
+      padding-right: rem(32);
+    }
+  }
 }

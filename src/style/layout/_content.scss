@@ -6,4 +6,10 @@
   }
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  @include respond(tab-port) {
+    padding-left: 0;
+  }
+  @include respond(phone) {
+    padding-left: rem(24, $fs-s);
+  }
 }

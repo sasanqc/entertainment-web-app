@@ -36,4 +36,10 @@
       opacity: 0.75;
     }
   }
+  @include respond(tab-port) {
+    width: rem(220, $fs-s);
+  }
+  @include respond(phone) {
+    width: rem(164, $fs-s);
+  }
 }

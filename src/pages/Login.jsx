@@ -15,7 +15,10 @@ const Login = () => {
     ) {
       return;
     }
-    if (!emailRef.current.value.includes("@")) {
+    if (
+      !emailRef.current.value.includes("@") ||
+      emailRef.current.value.split("@").length > 2
+    ) {
       return;
     }
     dispatch("LOGIN", { email: emailRef.current.value });

@@ -26,4 +26,10 @@
       opacity: 0.75;
     }
   }
+  @include respond(phone) {
+    width: rem(240, $fs-s);
+    &__textBox {
+      padding: rem(16, $fs-s);
+    }
+  }
 }

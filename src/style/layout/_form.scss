@@ -34,7 +34,9 @@
   }
   &__inputContainer {
     position: relative;
-    &:has(input:focus:invalid)::after {
+
+    &:has(input[type="email"]:not(:placeholder-shown):invalid)::after,
+    &:has(input[type="email"]:focus:invalid)::after {
       content: "Enter a valid email";
       position: absolute;
       right: 0;
@@ -42,12 +44,12 @@
       font-weight: 300;
     }
 
-    &:has(input[type="email"]:focus:invalid)::after {
-      content: "Enter a valid email";
-    }
-
     &:has(input[type="password"]:focus:invalid)::after {
       content: "Can't be empty";
+      position: absolute;
+      right: 0;
+      color: var(--clr-primary-1);
+      font-weight: 300;
     }
   }
 

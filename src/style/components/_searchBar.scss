@@ -16,4 +16,7 @@
     flex: 1;
     color: var(--clr-light-1);
   }
+  @include respond(tab-port) {
+    padding-top: 0;
+  }
 }
