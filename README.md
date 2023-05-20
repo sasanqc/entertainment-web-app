@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://entertainment-web-app-sasanqc.netlify.app/)
 
 ## My process
 
@@ -55,6 +55,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [@sasanqc](https://github.com/sasanqc/)
+- Frontend Mentor - [@sasanqc](https://www.frontendmentor.io/profile/sasanqc)
+- Twitter - [@sasanqc](https://www.twitter.com/sasanqc)
+- Linkedin - [@sasanqc](https://www.linkedin.com/in/sasanqc)
