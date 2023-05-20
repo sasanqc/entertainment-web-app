@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://entertainment-web-app-sasanqc.netlify.app/)
+- Solution URL: [Entertainment web app | Frontend mentor](https://www.frontendmentor.io/solutions/responsive-entertainment-web-app-with-react-and-scss-and-custome-hooks-g0uzACpUUw)
+- Live Site URL: [Entertainment web app](https://entertainment-web-app-sasanqc.netlify.app/)
 
 ## My process
 
