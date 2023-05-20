@@ -20,7 +20,6 @@
   @include respond(tab-port) {
     grid-template-columns: unset;
     grid-template-rows: max-content 1fr;
-
     padding-top: rem(24, $fs-s);
     padding-left: rem(24, $fs-s);
     .sideBar {

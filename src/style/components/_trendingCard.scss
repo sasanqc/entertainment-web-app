@@ -32,4 +32,26 @@
       padding: rem(16, $fs-s);
     }
   }
+  &::after {
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    border-radius: rem(8);
+    visibility: hidden;
+    top: 0;
+  }
+
+  &:hover::after {
+    visibility: visible;
+  }
+
+  &:hover .mediaCard__play {
+    visibility: visible;
+    top: 50%;
+  }
 }
